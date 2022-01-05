@@ -49,7 +49,8 @@ temperatures2 = [temp * 1.189 - 273.15 for temp in temperatures2]
 
 plt.plot(time_years, temperatures1, label="Sin atmósfera")
 plt.plot(time_years, temperatures2, label="Una capa de atmósfera")
-plt.plot(time_years, [15 for time in time_years], label="Temperatura real")
+plt.plot(time_years, [15 for time in time_years], label="Temperatura real", marker="$-$",
+		 linewidth=0)
 plt.title("Balance de energía en La Tierra", fontsize=15)
 plt.xlabel("Año", fontsize=12)
 plt.ylabel("Temperatura (°C)", fontsize=12)
